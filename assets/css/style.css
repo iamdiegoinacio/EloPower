@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "FFMark";
+    src: url("../fonts/FFMark.otf"),
+         url("../fonts/FFMarkBold.otf");
+  }
+  
+.top-border{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #0bc4e2;
+}
+
+.navbarPattern{
+    position: fixed !important;
+    width: 100%;
+    font-weight: bold;
+    background-color: rgba(18, 18, 18, 0.8);
+    height: 60px;
+}
+
+.navbarPattern li{
+    margin-right: 20px;
+}
+
+.navbarPattern a{
+    color: #fff;
+    font-family: 'FFMark';
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav-item:hover{
+    border-bottom: 2px solid #0bc4e2;
+    transition: 0.2s;
+}
+
+.dropdown-menu{
+    background: #111111;
+}
+
+video {
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+  }
+
+.videoFulLScrean{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
