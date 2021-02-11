@@ -1,8 +1,29 @@
 @font-face {
     font-family: "FFMark";
     src: url("../fonts/FFMark.otf"),
-         url("../fonts/FFMarkBold.otf");
-  }
+         url("../fonts/FFMarkBold.otf");      
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;700;900&display=swap');
+
+h1, h2, h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 5em;
+}
+
+h2{
+    font-size: 2.5em;
+    font-weight: 200;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 200;
+    color: #cdbe91;
+}
 
 .top-border{
     position: relative;
@@ -17,7 +38,10 @@
     width: 100%;
     font-weight: bold;
     background-color: rgba(18, 18, 18, 0.8);
-    height: 60px;
+}
+
+.dropdown-menu{
+    background: rgba(18, 18, 18, 0.8);
 }
 
 .navbarPattern li{
@@ -34,19 +58,34 @@
 .nav-item:hover{
     border-bottom: 2px solid #0bc4e2;
     transition: 0.2s;
+    transform: scale(1.08);
 }
 
-.dropdown-menu{
-    background: #111111;
+.brand{
+    margin-right: 60px;
 }
 
-video {
+.brand::before{
+    content: '';
+    display: table;
+    background: #fff;
+    height: 30px;
+    width: 3px;
+    z-index: -1;
+    position: absolute;
+    left: 200px;
+}
+
+#video {
     width: 100%;
     z-index: -1;
     height: 100%;
     left: 0px;
     top: 0px;
+    opacity: 100%;
   }
+
+
 
 .videoFulLScrean{
     overflow: hidden;
@@ -55,3 +94,44 @@ video {
     align-items: center;
     z-index: -1;
 }
+
+.title{
+    position: absolute;
+    display: flex;
+    top: 200px;
+    left: 100px;
+    align-items: center;
+    display: block;
+}
+
+.contratarBtn{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 20px 60px;
+    border: 3px solid #c7b184;
+    color: #c7b184;
+    background-color: #1e2328;
+    position: relative;
+    top: 60px;
+}
+
+.contratarBtn::before{
+    background: linear-gradient(0deg, #72542a 0%, #bd9e5e 100%);
+}
+
+.contratarBtn:hover{
+    background-color: #272e33;
+    transition: 400ms ease-in-out;
+    cursor: pointer;
+    color: #eee6d4;
+    box-shadow: 0 0 28px #000, 0 0 28px rgba(0, 0, 0, 0.6);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .dropdown-menu{
+        background: rgba(18, 18, 18, 0.5);
+    }
+  }
