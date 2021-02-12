@@ -1,73 +1,223 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Elojob</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/slide.css">
+  <title>Elojob</title>
 </head>
+
 <body>
 
-        <div class="top-border">
+  <div class="top-border">
 
+  </div>
+  <nav class="navbar navbar-expand-lg navbarPattern navbar-dark" style="z-index: 3">
+    <a class="navbar-brand brand" href="#">
+      <img src="assets/img/logo.png" width="30" class="d-inline-block align-top" alt="">
+      EloPower
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Ínicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contato</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Serviços
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Elojob</a>
+            <a class="dropdown-item" href="#">Duoboost</a>
+            <a class="dropdown-item" href="#">Coach</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section id="top">
+    <div class="title">
+      <!--Atrapalhando a versão mobile-->
+      <h1>EloPower</h1>
+      <h2 class="sub-title">Suba rapidamente de elos e divisões.</h2>
+      <a href="#"><button class="contratarBtn">Contratar</button></a>
+    </div>
+
+    <!--Foi descoberto que o z-index é que estava influenciando na cor dos outros elementos
+    pelo z-index do video estar positivo, o elemento atrapalhava os outros elementos aplicando
+    o style neles.-->
+    <div class="videoFullScreen">
+      <video id="video" autoplay muted loop>
+        <source src="assets/video/kindred.webm">
+      </video>
+    </div>
+
+  
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="assets/img/riven-mb.jpg" style="width:100%">
         </div>
-        <nav class="navbar navbar-expand-lg navbarPattern navbar-dark ">
-            <a class="navbar-brand brand" href="#">
-                <img src="assets/img/logo.png" width="30" class="d-inline-block align-top" alt="">
-                EloPower
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Ínicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contato</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Serviços
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Elojob</a>
-                    <a class="dropdown-item" href="#">Duoboost</a>
-                    <a class="dropdown-item" href="#">Coach</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </nav>
+        
+        <div class="mySlides fade">
+          <img src="assets/img/shaco-mb.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="assets/img/thresh.mb.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="assets/img/yasuogal-mb.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="assets/img/jax-mb.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="assets/img/zed-mb.jpg" style="width:100%">
+        </div>
+
+        <div class="dot" style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+    </div>
+  </section>
+
+  <div class="ring-separate"></div>
+
+  <section id="plan">
+    <img class="yasuo-img" src="assets/img/yasuo.png">
+
+    <div class="container elo-container">
+      <h2>TENHA O ELO QUE QUISER</h2>
+      <div class="elos row">
+        <img class="elo-item col-lg-4" src="assets/img/iron.png">
+        <img class="elo-item col-lg-4" src="assets/img/bronze.png">
+        <img class="elo-item col-lg-4" src="assets/img/silver.png">
+      </div>
+  
+      <div class="elos row">
+        <img class="elo-item col-lg-4" src="assets/img/gold.png">
+        <img class="elo-item col-lg-4" src="assets/img/platinum.png">
+        <img class="elo-item col-lg-4" src="assets/img/diamond.png">
+      </div>
+
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-5 formCenter">
+            <label for="inputState">SELECIONE O ELO ATUAL:</label>
+            <select id="inputState" class="form-control">
+              <option selected>Escolha...</option>
+              <option>Ferro</option>
+              <option>Bronze</option>
+              <option>Prata</option>
+              <option>Ouro</option>
+              <option>Platina</option>
+              <option>Diamante</option>
+            </select>
+          </div>
+          <div class="form-group col-md-5 formCenter">
+            <label for="inputState">SELECIONE O ELO DE OBJETIVO:</label>
+            <select id="inputState" class="form-control">
+              <option selected>Escolha...</option>
+              <option>Ferro</option>
+              <option>Bronze</option>
+              <option>Prata</option>
+              <option>Ouro</option>
+              <option>Platina</option>
+              <option>Diamante</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-5 formCenter">
+            <label for="inputState">SELECIONE A ATUAL DIVISÃO: </label>
+            <select id="inputState" class="form-control">
+              <option selected>Escolha...</option>
+              <option>IV</option>
+              <option>III</option>
+              <option>II</option>
+              <option>I</option>
+            </select>
+          </div>
+          <div class="form-group col-md-5 formCenter">
+            <label for="inputState">SELECIONE A DIVISÃO DE OBJETIVO: </label>
+            <select id="inputState" class="form-control">
+              <option selected>Escolha...</option>
+              <option>Ferro</option>
+              <option>Bronze</option>
+              <option>Prata</option>
+              <option>Ouro</option>
+              <option>Platina</option>
+              <option>Diamante</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="contratarBtn btnCalculo">CALCULAR</button>
+      </form>
+      
+    </div>
+   
+  </section>
 
 
-          <section id="top">
-            <div class="title">
-                <!--Atrapalhando a versão mobile-->
-                <h1>EloPower</h1>
-                <h2>Dê um boosting no seu elo hoje mesmo.</h2>
-                <div class="contratar">
-                    <a href="#"><button class="contratarBtn">Contratar</button></a>
-                </div>
-            </div>
-            <div class="videoFullScrean">
-                <video id="video" autoplay muted loop>
-                    <source src="assets/video/kindred.webm" >
-                </video>
-            </div>
-          </section>
+  <script>
+  
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" activeSlide", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " activeSlide";
+      setTimeout(showSlides, 6000); // Change image every 2 seconds
+    }
+    </script>
 
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="assets/js/loopVideo.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/loopVideo.js"></script>
 </body>
+
 </html>

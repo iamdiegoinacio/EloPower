@@ -1,71 +1,73 @@
 @font-face {
     font-family: "FFMark";
-    src: url("../fonts/FFMark.otf"),
-         url("../fonts/FFMarkBold.otf");      
+    src: url("../fonts/FFMark.otf"), url("../fonts/FFMarkBold.otf");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;700;900&display=swap');
-
-h1, h2, h3{
+h1, h2, h3 {
     color: #fff;
     text-transform: uppercase;
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 5em;
+    font-size: 8em;
 }
 
-h2{
-    font-size: 2.5em;
+a{
+    text-decoration: none !important;
+}
+
+h2 {
+    font-size: 4em;
     font-weight: 200;
 }
 
-h3{
+h3 {
     font-size: 2em;
     font-weight: 200;
     color: #cdbe91;
 }
 
-.top-border{
+.top-border {
     position: relative;
     top: 0;
     width: 100%;
-    height: 10px;
-    background-color: #0bc4e2;
+    height: 5px;
+    background-color: #c7b184;
 }
 
-.navbarPattern{
+.navbarPattern {
     position: fixed !important;
     width: 100%;
     font-weight: bold;
     background-color: rgba(18, 18, 18, 0.8);
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background: rgba(18, 18, 18, 0.8);
 }
 
-.navbarPattern li{
+.navbarPattern li {
     margin-right: 20px;
 }
 
-.navbarPattern a{
+.navbarPattern a {
     color: #fff;
     font-family: 'FFMark';
     text-transform: uppercase;
     text-align: center;
 }
 
-.nav-item:hover{
+.nav-item:hover {
     border-bottom: 2px solid #0bc4e2;
     transition: 0.2s;
     transform: scale(1.08);
 }
 
-.brand{
+.brand {
     margin-right: 60px;
 }
 
-.brand::before{
+.brand::before {
     content: '';
     display: table;
     background: #fff;
@@ -83,28 +85,38 @@ h3{
     left: 0px;
     top: 0px;
     opacity: 100%;
-  }
+}
 
-
-
-.videoFulLScrean{
+.videoFullScreen {
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -1;
+    z-index: -5
 }
 
-.title{
+.title {
     position: absolute;
     display: flex;
     top: 200px;
     left: 100px;
     align-items: center;
     display: block;
+    z-index: 2;
 }
 
-.contratarBtn{
+#top::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 130%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent 60%), linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent 60%);
+    z-index: 2;
+}
+
+
+.contratarBtn {
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 2em;
@@ -114,14 +126,18 @@ h3{
     color: #c7b184;
     background-color: #1e2328;
     position: relative;
-    top: 60px;
+    margin-top: 200px;
 }
 
-.contratarBtn::before{
+.collapse ul {
+    height: 50px;
+}
+
+.contratarBtn::before {
     background: linear-gradient(0deg, #72542a 0%, #bd9e5e 100%);
 }
 
-.contratarBtn:hover{
+.contratarBtn:hover {
     background-color: #272e33;
     transition: 400ms ease-in-out;
     cursor: pointer;
@@ -129,9 +145,91 @@ h3{
     box-shadow: 0 0 28px #000, 0 0 28px rgba(0, 0, 0, 0.6);
 }
 
+#plan {
+    position: relative;
+    height: 780px;
+    background-color: #112233;
+    z-index: 3;
+}
+
+.yasuo-img{
+  width: 1000px;
+  position:static;
+  margin-top: 40px;
+}
+
+.elo-container h2{
+    color: #112233;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.btnCalculo{
+    margin: 40px auto;
+    display: block;
+}
+
+.formCenter{
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 601px){
+    .slideshow-container{
+        display: none;
+    }
+}
+
 
 @media only screen and (max-width: 600px) {
-    .dropdown-menu{
+    .dropdown-menu {
         background: rgba(18, 18, 18, 0.5);
     }
-  }
+    h1, h2, h3 {
+        color: #fff;
+        font-size: 2em;
+        text-align: center;
+        padding: 0px 30px 0 30px;
+    }
+    h2 {
+        font-size: 1.5em;
+        font-weight: 300;
+        margin-top: 20px;
+    }
+    #top {
+        height: 600px;
+        background-color: #000;
+    }
+    .title {
+        top: 10vh;
+        left: 0;
+    }
+    .contratarBtn {
+        display: block;
+        margin: 0 auto;
+        top: 120px;
+        z-index: 5 !important;
+    }
+    #top::before {
+        display: none;
+    }
+    #plan {
+        z-index: 1 !important;
+    }
+    a {
+        text-decoration: none !important;
+    }
+
+    .videoFullScreen{
+        display: none;
+        visibility: hidden;
+        z-index: -22;
+    }
+
+    .yasuo-img{
+        width: 400px;
+        position:static;
+        margin-top: 40px;
+      }
+      
+}
