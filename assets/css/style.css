@@ -9,7 +9,7 @@ h1, h2, h3 {
     text-transform: uppercase;
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 8em;
+    font-size: 6em;
 }
 
 a{
@@ -71,11 +71,11 @@ h3 {
     content: '';
     display: table;
     background: #fff;
-    height: 30px;
+    height: 60px;
     width: 3px;
     z-index: -1;
     position: absolute;
-    left: 200px;
+    left: 14%;
 }
 
 #video {
