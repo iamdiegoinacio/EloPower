@@ -1,0 +1,322 @@
+@font-face {
+    font-family: "FFMark";
+    src: url("../fonts/FFMark.otf"), url("../fonts/FFMarkBold.otf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;700;900&display=swap');
+h1, h2, h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 6em;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h2 {
+    font-size: 4em;
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 200;
+    color: #cdbe91;
+}
+
+.top-border {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #c7b184;
+}
+
+.navbarPattern {
+    position: fixed !important;
+    width: 100%;
+    font-weight: bold;
+    background-color: rgba(18, 18, 18, 0.8);
+}
+
+.dropdown-menu {
+    background: rgba(18, 18, 18, 0.8);
+}
+
+.navbarPattern li {
+    margin-right: 20px;
+}
+
+.navbarPattern a {
+    color: #fff;
+    font-family: 'FFMark';
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid #0bc4e2;
+    transition: 0.2s;
+    transform: scale(1.08);
+}
+
+.brand {
+    margin-right: 60px;
+}
+
+.brand::before {
+    content: '';
+    display: table;
+    background: #fff;
+    height: 60px;
+    z-index: -5;
+    width: 3px;
+    position: absolute;
+    left: 14%;
+}
+
+#video {
+    width: 100%;
+    z-index: -4;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: 100%;
+}
+
+.videoFullScreen {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -3
+}
+
+.title {
+    position: absolute;
+    display: flex;
+    top: 200px;
+    left: 100px;
+    align-items: center;
+    display: block;
+    z-index: 1;
+}
+
+#top::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 130%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent 60%), linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent 60%);
+    z-index: -2;
+}
+
+.contratarBtn {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 20px 60px;
+    border: 3px solid #c7b184;
+    color: #c7b184;
+    background-color: #1e2328;
+    position: relative;
+    margin-top: 200px;
+}
+
+.collapse ul {
+    height: 50px;
+}
+
+.contratarBtn::before {
+    background: linear-gradient(0deg, #72542a 0%, #bd9e5e 100%);
+}
+
+.contratarBtn:hover {
+    background-color: #272e33;
+    transition: 400ms ease-in-out;
+    cursor: pointer;
+    color: #eee6d4;
+    box-shadow: 0 0 28px #000, 0 0 28px rgba(0, 0, 0, 0.6);
+}
+
+#calc {
+    background-image: url(../img/bannerCalculo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.elo-container {
+    padding-top: 60px;
+}
+
+.elo-container h2 {
+    color: #112233;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.elo-container h3 {
+    text-align: center;
+    color: #112233;
+    font-weight: 400;
+    font-size: 2.0em;
+}
+
+.elos img {
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.elos img:hover {
+    transform: scale(1.1);
+}
+
+.btnCalculo {
+    margin: 40px auto;
+    display: block;
+}
+
+.form-row {
+    margin-top: 40px;
+}
+
+.formCenter {
+    margin: 0 auto;
+}
+
+
+.formCalc h3 {
+    font-size: 1.5em;
+    color: #112233;
+    font-weight: 600;
+}
+
+.formCalc p {
+    font-size: 2.5em;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.inputLb {
+    font-size: 1.5em;
+    font-weight: 400;
+    font-family: 'Montserrat';
+}
+
+.fValue {
+    padding-bottom: 60px;
+}
+
+#plan {
+    position: relative;
+    height: 780px;
+    background-color: #112233;
+}
+
+.yasuo-img {
+    width: 1000px;
+    position: static;
+    margin-top: 40px;
+}
+
+@media only screen and (min-width: 601px) {
+    .slideMobile {
+        display: none;
+    }
+    .elosMb {
+        display: none;
+    }
+    .formMb {
+        display: none;
+    }
+    .formStructureMb{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .dropdown-menu {
+        background: rgba(18, 18, 18, 0.5);
+    }
+
+    .title h1{
+        font-size: 2.5em;
+    }
+
+    h1, h2, h3 {
+        color: #fff;
+        font-size: 2em;
+        text-align: center;
+        padding: 0px 30px 0 30px;
+    }
+    h2 {
+        font-size: 1.5em;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+    #top {
+        height: 600px;
+        background-color: #000;
+    }
+    .title {
+        top: 20vh;
+        left: 0;
+    }
+    .contratarBtn {
+        display: block;
+        margin: 100px auto 20px auto;
+    }
+    #top::before {
+        display: none;
+    }
+    #plan {
+        z-index: 1 !important;
+    }
+    a {
+        text-decoration: none !important;
+    }
+    .videoFullScreen {
+        display: none;
+        visibility: hidden;
+        z-index: -22;
+    }
+    .yasuo-img {
+        width: 400px;
+        position: static;
+        margin-top: 40px;
+    }
+    .elo-container h2 {
+        font-size: 2.5em;
+    }
+    .elo-container h3 {
+        font-size: 1.5em;
+    }
+    .elos {
+        display: none;
+    }
+    .formLg {
+        display: none;
+    }
+    .collapse ul {
+        height:auto;
+    }
+
+    .formStructureLg{
+        
+    }
+
+    .formStructureMb{
+        display:block;
+    }
+
+}
